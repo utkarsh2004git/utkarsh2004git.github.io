@@ -44,6 +44,14 @@ canvas {
 	display: flex;
 	gap: 20px;
 }
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
 .cardx{
 	border: 1px solid white;
 	height: 15rem;
@@ -98,14 +106,24 @@ canvas {
 .card3 .logo:hover{
 	transform: scale(0.95);
 }
+.counter{
+	height: 2rem;
+	width: 6rem;
+	margin-bottom: 15px;
+}
 
 @media (max-width:900px ) {
 	.title{
-		font-size: 19px;
+		font-size:21px;
 		margin-bottom: 20px;
+	}
+	.header{
+		flex-direction: column-reverse;
+		align-items: start;
 	}
 	.container{
 		flex-direction: column;
+		
 	}
 	.card{
 		padding: 15px;
@@ -118,10 +136,23 @@ canvas {
 		width: 20rem;
 		height:5rem ;
 	}
+	.counter{
+		height: 2rem;
+		width: 5rem;
+		margin-bottom: 5px;
+	}
+
+
 }
 
 @media (max-width:450px ) {
 	.wrapper{
 		align-items: start;
+	}
+}
+@media (max-width:350px ) {
+	.card{
+		transform: scale(0.82);
+
 	}
 }
