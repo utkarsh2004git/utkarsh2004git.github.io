@@ -121,7 +121,7 @@ canvas {
 }
 
 @media (max-width:450px ) {
-	.card{
-		transform: scale(0.75);
+	.wrapper{
+		align-items: start;
 	}
 }
